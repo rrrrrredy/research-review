@@ -1,6 +1,7 @@
 ---
 name: research-review
 description: Review existing research reports, articles, analyses and proposals against their actual brief and evidence. Use for substantive review, adversarial critique, readability review or acceptance checks; report findings and recommendations without rewriting the work unless requested.
+license: MIT
 ---
 
 # Research Review

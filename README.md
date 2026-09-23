@@ -41,3 +41,7 @@ The host agent provides file access, retrieval and independent contexts. This pa
 ## Method updates
 
 Compare the source files at the recorded revision with a proposed update, decide which changes apply to standalone review, update the references and provenance together, then run `python scripts/check_skill.py`. Upstream changes do not automatically modify this project.
+
+## License
+
+Licensed under the [MIT License](LICENSE). Use, modification and redistribution are permitted, including commercial use, provided the copyright and license notices are retained. The bundled Research Toolkit methods retain their original attribution.

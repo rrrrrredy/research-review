@@ -15,7 +15,21 @@ def main() -> None:
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
         raise ValueError("Source revision must be an exact Git commit")
     source_base = manifest["repository"] + "/blob/" + commit + "/docs/"
-    for item in manifest["files"]:
+    expected_methods = {
+        f"references/{name}{language}.md"
+        for name in ("subagents-and-review-loop", "quality-gates")
+        for language in ("", ".zh-CN")
+    }
+    entries = manifest.get("files")
+    if not isinstance(entries, list) or not all(
+        isinstance(item, dict) and isinstance(item.get("path"), str)
+        for item in entries
+    ):
+        raise ValueError("Source manifest must list each bundled method exactly once")
+    paths = [item["path"] for item in entries]
+    if len(paths) != len(expected_methods) or set(paths) != expected_methods:
+        raise ValueError("Source manifest must list each bundled method exactly once")
+    for item in entries:
         path = (ROOT / item["path"]).resolve()
         if not path.is_relative_to(ROOT):
             raise ValueError("Reference path is outside the Skill")

@@ -41,3 +41,7 @@ git clone https://github.com/rrrrrredy/research-review.git /path/to/skills/resea
 ## 方法更新
 
 更新审查方法时，对比来源记录中的版本与候选新版本，确认变化是否适用于独立审查，再一并更新参考文件与来源记录，运行 `python scripts/check_skill.py`。上游更新不会自动改变本项目。
+
+## 开源许可
+
+本项目采用 [MIT 许可证](LICENSE)，允许使用、修改、再分发及商业使用，需保留版权声明与许可声明。随包提供的 Research Toolkit 审查方法保留原始署名。
