@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究审查"
+  short_description: "按任务与证据审查报告和文章，核查评审意见并给出可定位的改进建议"
+  default_prompt: "请用 $research-review 审查这份成果，给出有依据的问题和改进建议，并说明审查覆盖与未解决事项。"

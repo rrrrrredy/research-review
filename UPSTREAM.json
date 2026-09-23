@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/rrrrrredy/research-toolkit",
+  "commit": "12cfface5124e49481da2343d431bc5b9005250d",
+  "adaptation": "Only optional full-workflow documentation links are rewritten to pinned source URLs.",
+  "files": [
+    {
+      "path": "references/subagents-and-review-loop.md",
+      "source_sha256_lf": "b25daa87d4e5fca3a982aa91403858028156bbb1e7daa3668fb10214fba26b2f",
+      "bundled_sha256_lf": "8c4d193fd82a676b8910ded57a9fbb6410831145b897635aa8db302b777ac42b"
+    },
+    {
+      "path": "references/subagents-and-review-loop.zh-CN.md",
+      "source_sha256_lf": "9f16385fa1211439a537436530e5459a552e1969311ebdf7140fd51cb4375ac2",
+      "bundled_sha256_lf": "dca56b0a4a909fcd37a65231f966581238acff24b3e245f6cf2e1ccc6d29a424"
+    },
+    {
+      "path": "references/quality-gates.md",
+      "source_sha256_lf": "5e0c05a3328fa84d1c44165684d269042a542230290b6c2bc3708cf06f61df7d",
+      "bundled_sha256_lf": "265c12a1cffa2f7204bfd2419e4f746628d61910613c4bd0a02cdd7d849b4f97"
+    },
+    {
+      "path": "references/quality-gates.zh-CN.md",
+      "source_sha256_lf": "defd45c36b5d94cf81a4406a4f3d7fa618d304a14356a5f266d959bb9f78c8f9",
+      "bundled_sha256_lf": "4c157af872627e84e630a64ae7ab6260123e0aea0e560934dc7d9d95e61298fe"
+    }
+  ]
+}
