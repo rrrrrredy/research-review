@@ -14,7 +14,7 @@ def main() -> None:
     commit = manifest["commit"]
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
         raise ValueError("Source revision must be an exact Git commit")
-    source_base = manifest["repository"] + "/blob/" + commit + "/docs/"
+    source_base = manifest["repository"] + "/blob/" + commit + "/"
     expected_methods = {
         f"references/{name}{language}.md"
         for name in ("subagents-and-review-loop", "quality-gates")
@@ -34,7 +34,7 @@ def main() -> None:
         if not path.is_relative_to(ROOT):
             raise ValueError("Reference path is outside the Skill")
         text = path.read_text(encoding="utf-8")
-        original = text.replace("](" + source_base, "](../docs/")
+        original = text.replace("](" + source_base, "](../")
         for content, field in ((text, "bundled_sha256_lf"), (original, "source_sha256_lf")):
             if hashlib.sha256(content.encode("utf-8")).hexdigest() != item[field]:
                 raise ValueError("Reference differs from provenance: " + item["path"])

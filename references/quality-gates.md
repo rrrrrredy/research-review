@@ -4,6 +4,9 @@
 
 Use these gates before declaring any stage or final deliverable complete.
 
+
+**Profile scope:** Full review/delivery requirements on this page apply to Full. Lite retains the brief, claims, section drafting and final checklist with explicit review/gate skip logs. New Full tasks without a backend may use degraded self-review; non-author-context requirements apply to external/independent tiers and tasks explicitly requiring independent review, never to a self-review relabelled independent. Frozen evaluations retain their original protocol. Use the [Skill profile rules](https://github.com/rrrrrredy/research-toolkit/blob/5ee675d29200c64edcd615aa2ab9bf5b8ee99e97/SKILL.md#choosing-a-profile).
+
 ## Before Collection
 
 - Research brief gate has been run.
@@ -22,8 +25,7 @@ Use these gates before declaring any stage or final deliverable complete.
 
 - `state/task_spec.md` has been read.
 - `state/progress.json` has been read.
-- Recent `findings.jsonl` and `iteration_log.jsonl` entries have been reviewed.
-- `directions_tried.json` has been checked before repeating a direction.
+- Existing research notes have been consulted when useful; optional history is not required to resume.
 - Completed stages are not re-run.
 - The research brief is not re-asked if answers already exist in `task_spec.md`.
 
@@ -67,7 +69,7 @@ Use these gates before declaring any stage or final deliverable complete.
 - Repeated points are merged.
 - The synthesis is more than a summary.
 - Counter-evidence is integrated.
-- The reference appendix is reader-facing.
+- Citations follow the brief; any requested reference appendix is reader-facing.
 
 ## Reader Review Gate
 
@@ -97,9 +99,9 @@ Full review-revise cycles for a single section are capped at two unless the user
 
 ## Review Validity and Sampling
 
-Every declared model-review slot has a complete original response, retained execution evidence, the correct input/artifact version and an evidenced substantive-validity decision. Failed or incomplete calls remain unfinished assignments. Valid negative findings are retained and adjudicated; their existence does not make an evaluation incomplete.
+Every declared model-review slot has a complete original response, retained execution evidence, the correct input/artifact version and substantive coverage of the declared review dimensions. Additional validity auditing follows the declared task. Failed or incomplete calls remain unfinished assignments. Valid negative findings are retained and adjudicated; their existence does not make an evaluation incomplete.
 
-Critical/major findings and consequential rejected criticisms have an adjudication context separate from the author and original reviewer. Sampling includes decisive items, passed material and no-change decisions under a predeclared method. Record actual outcomes and complete triggered follow-up; a planned action is not a completed check. See [role and sampling methods](subagents-and-review-loop.md) and [record checks](https://github.com/rrrrrredy/research-toolkit/blob/12cfface5124e49481da2343d431bc5b9005250d/docs/review-completion.md).
+Ordinary reports require effective content review without a compulsory second audit context. Independent adjudication and formal sampling apply to expressly declared audited plans; an evaluation label does not add them. For those plans, the [methods](subagents-and-review-loop.md) and [record interface](https://github.com/rrrrrredy/research-toolkit/blob/5ee675d29200c64edcd615aa2ab9bf5b8ee99e97/docs/review-completion.md) remain available.
 
 ## Before Public Delivery
 
@@ -114,7 +116,7 @@ The gates below concern reader-ready delivery. Evaluation completion preserves f
 - Remaining limitations are stated cleanly when they matter.
 - Every material follow-up requirement has evidence of satisfaction or the user's specific decision changing it; required reading records distinguish actual reading from access attempts.
 - `progress.json.stage` is `final` if and only if `status` is `complete`; neither terminal value may appear alone.
-- Every required model-review slot has an effective result, and required validity, adjudication and sampling work is complete. A global PASS cannot replace a missing slot.
+- Every required content review is complete; any expressly required audit work is complete. A global PASS cannot replace a missing required review.
 - The latest parseable review for the full report or global final delivery is PASS with no open issues. A later failure supersedes an earlier PASS, and malformed review rows fail closed.
 - Its `artifact_sha256`, and the hashes of any task-required review scopes, match the current report. A local or generic reader review does not establish that an explicitly required specialist review was completed.
 - The intended user-visible message matches current state and discloses accepted limitations that affect the result.

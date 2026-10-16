@@ -1,27 +1,27 @@
 {
   "repository": "https://github.com/rrrrrredy/research-toolkit",
-  "commit": "12cfface5124e49481da2343d431bc5b9005250d",
-  "adaptation": "Only optional full-workflow documentation links are rewritten to pinned source URLs.",
+  "commit": "5ee675d29200c64edcd615aa2ab9bf5b8ee99e97",
+  "adaptation": "Only parent-relative Toolkit entrypoint and documentation links are rewritten to pinned source URLs; standalone scope is defined in SKILL.md.",
   "files": [
     {
       "path": "references/subagents-and-review-loop.md",
-      "source_sha256_lf": "b25daa87d4e5fca3a982aa91403858028156bbb1e7daa3668fb10214fba26b2f",
-      "bundled_sha256_lf": "8c4d193fd82a676b8910ded57a9fbb6410831145b897635aa8db302b777ac42b"
+      "source_sha256_lf": "2f400eb44b914ea0f93318af0aa20d21b6f9651c56af5e81c8c93f9412a70aba",
+      "bundled_sha256_lf": "a198e00e6a8346d1407d5e4cf48c9a0034c7d1e2dddfb66a2cd6304ed6660f5b"
     },
     {
       "path": "references/subagents-and-review-loop.zh-CN.md",
-      "source_sha256_lf": "9f16385fa1211439a537436530e5459a552e1969311ebdf7140fd51cb4375ac2",
-      "bundled_sha256_lf": "dca56b0a4a909fcd37a65231f966581238acff24b3e245f6cf2e1ccc6d29a424"
+      "source_sha256_lf": "c601bddb80e4d0056f3907934dc5d6a5566ebf9b7d26cb58d2d61dbc19e41334",
+      "bundled_sha256_lf": "b2c93f6e7e0af5f2b75da71eac1fd9cb45952a50b5d0b789c64c4aaa251b0f95"
     },
     {
       "path": "references/quality-gates.md",
-      "source_sha256_lf": "5e0c05a3328fa84d1c44165684d269042a542230290b6c2bc3708cf06f61df7d",
-      "bundled_sha256_lf": "265c12a1cffa2f7204bfd2419e4f746628d61910613c4bd0a02cdd7d849b4f97"
+      "source_sha256_lf": "d0c771e8d559a7dcb132fc7e76cfe019d785845ae3c21826ba6250d88ba8eb5c",
+      "bundled_sha256_lf": "8162e7799cef7dbd9ca71bd01e990a144e618afd0c46f5f303254b27dd24810c"
     },
     {
       "path": "references/quality-gates.zh-CN.md",
-      "source_sha256_lf": "defd45c36b5d94cf81a4406a4f3d7fa618d304a14356a5f266d959bb9f78c8f9",
-      "bundled_sha256_lf": "4c157af872627e84e630a64ae7ab6260123e0aea0e560934dc7d9d95e61298fe"
+      "source_sha256_lf": "c0da5736b705463e0168bd15314c988d309ed9e890e0203459f160570a8b5e35",
+      "bundled_sha256_lf": "ea446c9c726bab2003d460435ffedc1069512c7a25fff64c04417f77981a5083"
     }
   ]
 }
