@@ -4,13 +4,22 @@
 
 An independently installable Skill for reviewing reports, articles, analyses and proposals. It returns locatable findings and recommendations, preserves the original work by default, and distinguishes review completion from artifact acceptance.
 
+## What you get
+
+Supply the report, actual task and available sources. Receive located, evidenced findings and minimal recommendations. Ordinary review examines the content without adding an auditor, independent adjudicator or formal sampling unless the task requires them. Keep the first valid result rather than rerunning for a favorable outcome.
+
+| Example | Judgment and action |
+| --- | --- |
+| **Change: product direction presented as version succession.** The draft called two descriptions evidence of continuity between current and earlier functionality. | The dated sources support their respective product directions, not version succession. Keep the capability descriptions and narrow the inference: they do not establish that aily preceded Doubao Work as a product version. This is a [historical Toolkit report revision](https://github.com/rrrrrredy/research-toolkit/blob/5ee675d29200c64edcd615aa2ab9bf5b8ee99e97/docs/case-study/office-agents/README.md), not a new review run by this package. |
+| **Keep: a supported comparison with its scope.** Group A cuts entry time from eight to four minutes without changing two-day turnaround; Group B removes a day of duplicate approval and reaches one-day turnaround. | Keep the recommendation to investigate approval waits in this pilot, together with the limitation that two stores per group cannot represent all stores. A small sample does not erase the pilot finding, and editing artificial prose should not erase meaningful uncertainty. This uses constructed material from an existing [diagnostic case](https://github.com/rrrrrredy/research-toolkit/blob/5ee675d29200c64edcd615aa2ab9bf5b8ee99e97/evals/semantic_diagnostics/reader-cases-2026-09-10.json), not a real store evaluation. |
+
 ## Relationship to Research Toolkit
 
 The review methods originate from [Research Toolkit](https://github.com/rrrrrredy/research-toolkit), specifically its [Subagents and Review](references/subagents-and-review-loop.md) and [Quality Gates](references/quality-gates.md) references.
 
 Research Toolkit includes review and acceptance as integral parts of its complete research workflow. Research Review makes those review methods available as a separately installable Skill for assessing existing work. Research Toolkit retains its review specifications, execution tools and acceptance checks in full.
 
-The projects are maintained and released independently. Using this Skill does not require installing Research Toolkit.
+The projects are maintained and released independently. Using this Skill does not require installing Research Toolkit; existing Toolkit users do not need a second installation. **Independent installation is not independent review:** the latter needs a context separate from the author, supplied by the host.
 
 See [UPSTREAM.json](UPSTREAM.json) for the exact source revision and file records, and [LICENSE](LICENSE) for licensing and attribution.
 
@@ -32,11 +41,11 @@ Supply the artifact, actual requirements and available sources. The agent asks o
 
 - Requirements and author intent; evidence and data; adversarial reasoning.
 - Structure and depth; reader usefulness; process-language removal and natural expression.
-- Appropriate domain criteria, substantive review validity, consequential disputes and sampling of passed work.
+- Appropriate domain criteria and whether disputed findings are supported by actual passages and sources.
 
 Compatible perspectives can share a reviewer. Valid negative reviews are retained. Failed required reviews remain unfinished and are resumed after the cause is resolved. The Skill does not create a mandatory vendor panel or start repeated report revisions.
 
-The host agent provides file access, retrieval and independent contexts. This package contains instructions and methods, not a model service, automatic executor or credentials. If an independent check cannot be performed, it must be disclosed as incomplete. A successful package check does not certify a review or report.
+The host agent provides file access, retrieval and independent contexts. This package contains instructions and methods, not a model service, automatic executor or credentials. If an expressly required independent check cannot be performed, disclose the missing part. A successful package check does not certify a review or report.
 
 ## Method updates
 
